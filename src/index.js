@@ -1,18 +1,25 @@
 const express = require('express');//montar el servidor
 const mongoose = require("mongoose");//modulo para conexion DB
 require("dotenv").config();//modulo para protejer la clave uri para conexion conla DB creando variables de ambiente
-const userRoutes = require("./routes/user");
+const clienteRoutes = require("./routes/cliente");
+const vehiculoRoutes = require("./routes/vehiculo");
+const vendedorRoutes = require("./routes/vendedor");
+const ventaRoutes = require("./routes/venta");
 
 const app = express(); //me retorna el objeto de la aplicación
 const port = process.env.PORT || 9000; //variable de ambiente, Puerto de conexión 
 
 //middleware
 app.use(express.json());
-app.use('/api',userRoutes);
+app.use('/api', ventaRoutes);
+app.use('/api', clienteRoutes);
+app.use('/api', vehiculoRoutes);
+app.use('/api', vendedorRoutes);
+
 
 // routes
 app.get('/',(req, res)=>{ //recibe objeto de la petición y el objeto de la respuesta
-    res.send('Welcome to my API');
+    res.send('Bienvenidos a mi API de venta de vehiculos');
 
 });
 

@@ -1,0 +1,35 @@
+###
+POST http://localhost:9000/api/clientes HTTP/1.1
+content-Type: application/json
+
+{
+    "nombre":"Karen Torres",
+    "numeroCedula":"1045689261",
+    "correo":"ktarch.h@hotmail.com"
+}
+
+
+###
+GET http://localhost:9000/api/clientes HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/62f5adb3abd80ffc812768e6 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/62fbb110f90af2e980404cab HTTP/1.1
+content-Type: application/json
+
+{
+    "name":"Karen Torres Archbold",
+    "age":"27",
+    "email":"kt.arch@hotmail.com"
+}
+
+###
+DELETE  http://localhost:9000/api/users/62f5adb3abd80ffc812768e6 HTTP/1.1
+
+###
+POST http://localhost:9000/api/ventas HTTP/1.1
+content-Type: application/json
+
+{}
