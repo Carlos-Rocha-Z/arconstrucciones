@@ -13,23 +13,20 @@ content-Type: application/json
 GET http://localhost:9000/api/clientes HTTP/1.1
 
 ###
-GET http://localhost:9000/api/users/62f5adb3abd80ffc812768e6 HTTP/1.1
+GET http://localhost:9000/api/clientes/62fce1b66e72591acb434828 HTTP/1.1
 
 ###
 PUT http://localhost:9000/api/users/62fbb110f90af2e980404cab HTTP/1.1
 content-Type: application/json
 
 {
-    "name":"Karen Torres Archbold",
-    "age":"27",
-    "email":"kt.arch@hotmail.com"
+    "nombre":"Pedro Herrera",
+    "numeroCedula":"123123123",
+    "email":"Pedro.h@hotmail.com"
 }
 
 ###
 DELETE  http://localhost:9000/api/users/62f5adb3abd80ffc812768e6 HTTP/1.1
 
 ###
-POST http://localhost:9000/api/ventas HTTP/1.1
-content-Type: application/json
 
-{}
