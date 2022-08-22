@@ -1,0 +1,514 @@
+{
+	"info": {
+		"_postman_id": "3c44c6b6-db18-4523-b916-04644affe109",
+		"name": "arConstrucciones",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22463099"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "Crear-Clientes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"nombre\":\"Carlos Rocha\",\r\n\"numeroCedula\":\"1020810756\",\r\n\"correo\":\"ce.rochaz.h@hotmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener-Clientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener-Un-Cliente-Por-Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/clientes/62fced1792ddfa7c3e30a7bd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"clientes",
+								"62fced1792ddfa7c3e30a7bd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar-Un-Cliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Carolina Perez\",\r\n    \"numeroCedula\": 11122233344,\r\n    \"correo\": \"Carolina.P@hotmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/clientes/62fd191230937f526e50884f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"clientes",
+								"62fd191230937f526e50884f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar-Un-Cliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/clientes/62fd191230937f526e50884f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"clientes",
+								"62fd191230937f526e50884f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vendedor",
+			"item": [
+				{
+					"name": "Crear-Vendedor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Alberto Rodriguez\",\r\n    \"numeroCedula\":102084657,\r\n    \"correo\":\"a.rodriguez@arconstrucciones.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/vendedores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"vendedores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener-Vendedores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/vendedores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"vendedores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener-Un-Vendedor-Por-Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/vendedores/62fe6079b222e5fe17904f60",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"vendedores",
+								"62fe6079b222e5fe17904f60"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar-Un-Vendedor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Alberto ramirez\",\r\n    \"numeroCedula\":102084657,\r\n    \"correo\":\"a.ramirez@arconstrucciones.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/vendedores/62fe6079b222e5fe17904f60",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"vendedores",
+								"62fe6079b222e5fe17904f60"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar-Un-Vendedor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/vendedores/62fe6079b222e5fe17904f60",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"vendedores",
+								"62fe6079b222e5fe17904f60"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vehiculos",
+			"item": [
+				{
+					"name": "Crear-Vehiculo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"marca\":\"Kia\",\r\n    \"precio\": 45300000,\r\n    \"referencia\":\"Picanto zenith\",\r\n    \"cantidad\": 20,\r\n    \"imagen\": \"imagen Kia Picanto zenith\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/vehiculos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"vehiculos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener-Vehiculos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/vehiculos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"vehiculos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener-Un-Vehiculo-Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/vehiculos/62fe6503e021c804e2e3d85b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"vehiculos",
+								"62fe6503e021c804e2e3d85b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar-Un-Vehiculo-Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"marca\": \"Chevrolet\",\r\n    \"precio\": 63000000,\r\n    \"referencia\": \"onix Turbo\",\r\n    \"cantidad\": 50,\r\n    \"imagen\": \"imagen Chevrolet Onix Turbo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/vehiculos/62fe6503e021c804e2e3d85b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"vehiculos",
+								"62fe6503e021c804e2e3d85b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar-Un-Vehiculo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/vehiculos/62fe6863b99ca32fdcaf83dc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"vehiculos",
+								"62fe6863b99ca32fdcaf83dc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Venta",
+			"item": [
+				{
+					"name": "Crear-Venta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"fecha\":\"22/08/2022\",   \r\n   \"cliente\":\"62fced1792ddfa7c3e30a7bd\",\r\n    \"vehiculo\":\"62fe6503e021c804e2e3d85b\",\r\n     \"cantidad\":\"2\",\r\n    \"vendedor\":\"62fe6025b222e5fe17904f5c\"\r\n}\r\n\r\n  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/ventas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"ventas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener-Ventas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/ventas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"ventas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bbtener-Una-Venta-por-Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/ventas/6303997a4e63eacfe63bd524",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"ventas",
+								"6303997a4e63eacfe63bd524"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar-Una-Venta-Por-Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n   \"cliente\":\"62fce485297b053f97955ec6\",\r\n    \"vehiculo\":\"62fe6503e021c804e2e3d85b\",\r\n    \"vendedor\":\"62fe6025b222e5fe17904f5c\"\r\n}\r\n\r\n  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/ventas/6303997a4e63eacfe63bd524",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"ventas",
+								"6303997a4e63eacfe63bd524"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar-Una-Venta",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/ventas/6303997a4e63eacfe63bd524",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"ventas",
+								"6303997a4e63eacfe63bd524"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
